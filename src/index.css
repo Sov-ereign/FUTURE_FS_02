@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00ffff, #ff00ff);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #00cccc, #cc00cc);
+}
+
+/* Custom range slider */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Glow animations */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px currentColor; }
+  50% { box-shadow: 0 0 20px currentColor, 0 0 30px currentColor; }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Neon text effect */
+.neon-text {
+  text-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 15px currentColor,
+    0 0 20px currentColor;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(0, 255, 255, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(0, 255, 255, 0.3);
+  color: white;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles */
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid #00ffff;
+  outline-offset: 2px;
+}
+
+/* Neon/glow style for select dropdown fields and options */
+select {
+  background: rgba(17, 24, 39, 0.7); /* dark glassy */
+  color: #e0eaff;
+  border: 1.5px solid #00ffff44;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 16px 0 #00ffff22;
+  backdrop-filter: blur(6px);
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+select option {
+  background: linear-gradient(90deg, #0f172a 60%, #3b0764 100%);
+  color: #00ffff;
+  border-bottom: 1px solid #00ffff33;
+  transition: background 0.2s, color 0.2s;
+}
+
+select option:hover,
+select option:focus {
+  background: linear-gradient(90deg, #00ffff 0%, #a21caf 100%);
+  color: #fff;
+}
+
+select:focus {
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 0 2px #00ffff, 0 0 10px #00ffff99;
+  background: rgba(17, 24, 39, 0.85);
+}
