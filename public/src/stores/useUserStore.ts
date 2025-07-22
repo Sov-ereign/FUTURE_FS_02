@@ -30,7 +30,7 @@ export const useUserStore = create<UserStore>()(
           const user: User = {
             id: Math.random().toString(36).substr(2, 9),
             email,
-            firstName: 'John',
+            firstName: 'Sov',
             lastName: 'Doe'
           };
           set({ user });
