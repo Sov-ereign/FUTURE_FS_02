@@ -12,7 +12,7 @@
 
 <!-- Add your demo link here -->
 <div align="center">
-  <a href="https://your-demo-link.com" target="_blank">
+  <a href="https://www.linkedin.com/posts/sov-ereign_reactjs-tailwindcss-ecommerce-activity-7353462403432349696-B6d1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJgqL4Blt08GWuJ9AdUx5iQUQUE3O2mDc4" target="_blank">
     <img src="https://img.shields.io/badge/🛍️_Watch_Demo-06B6D4?style=for-the-badge&logo=youtube&logoColor=white&labelColor=06B6D4" alt="Demo Video" />
   </a>
 </div>
